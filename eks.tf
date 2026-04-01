@@ -44,7 +44,7 @@ data "aws_subnets" "default" {
 # EKS CLUSTER
 # -----------------------------
 resource "aws_eks_cluster" "cluster" {
-  name     = "demo-eks"
+  name     = "eks"
   role_arn = aws_iam_role.cluster.arn
 
   vpc_config {
